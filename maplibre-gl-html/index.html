@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+        
+        <style>
+            #map {top: 0; bottom: 0; left: 0; right: 0; position: absolute;}
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script>
+            const center_coord = [-73.9, 41]
+            const zoom = 9
+            const radius = 2500
+            
+            var map = new maplibregl.Map({
+                container: 'map',
+                style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
+                center: center_coord, // starting position [lng, lat]
+                zoom: zoom // starting zoom
+            });
+        </script>
+    </body>
+</html>
