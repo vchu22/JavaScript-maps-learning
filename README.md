@@ -1,2 +1,2 @@
 # js-maps-learning
-For learning creating maps in Javascript
+For learning how to create maps using Javascript libraries
