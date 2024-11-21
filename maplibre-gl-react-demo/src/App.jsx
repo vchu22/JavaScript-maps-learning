@@ -20,6 +20,11 @@ function App() {
       ...viewState,
     })
 
+    map.addControl(new maplibregl.ScaleControl(), 'bottom-right');
+    map.addControl(new maplibregl.FullscreenControl(), 'bottom-right');
+    map.addControl(new maplibregl.NavigationControl(), 'bottom-right');
+    map.addControl(new maplibregl.GeolocateControl(), 'bottom-right');
+
     return () => {
       map.remove();
     };
